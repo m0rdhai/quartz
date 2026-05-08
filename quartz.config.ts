@@ -68,7 +68,6 @@ const config: QuartzConfig = {
     ],
     filters: [
       Plugin.RemoveDrafts(), // ← filtert draft: true raus
-      Plugin.ExplicitPublish(), // ← NUR wenn du opt-in willst (siehe unten)
     ],
     emitters: [
       Plugin.AliasRedirects(),
