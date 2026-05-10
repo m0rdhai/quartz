@@ -4,17 +4,17 @@ import * as Plugin from "./quartz/plugins"
 
 const config: QuartzConfig = {
   configuration: {
-    pageTitle: "Cryopolis", // Name der Site
+    pageTitle: "Cryopolis",
     pageTitleSuffix: "",
     enableSPA: true,
     enablePopovers: true,
     analytics: null,
-    locale: "de-DE", 
+    locale: "en-GB",
     baseUrl: "cryopolis.games",
     ignorePatterns: [
-      "private", // Ordner namens "private" komplett ignorieren
-      "templates", // Obsidian-Templates nicht publishen
-      "**/_*", // Alles mit _ prefix ignorieren
+      "private",
+      "templates",
+      "**/_*",
       ".obsidian",
     ],
     defaultDateType: "modified",
@@ -22,39 +22,39 @@ const config: QuartzConfig = {
       fontOrigin: "googleFonts",
       cdnCaching: true,
       typography: {
-        header: "Schibsted Grotesk",
-        body: "Source Sans Pro",
+        header: "Orbitron",
+        body: "Share Tech Mono",
         code: "IBM Plex Mono",
       },
       colors: {
         lightMode: {
-          light: "#faf8f8",
-          lightgray: "#e5e5e5",
-          gray: "#b8b8b8",
-          darkgray: "#4e4e4e",
-          dark: "#2b2b2b",
-          secondary: "#284b63",
-          tertiary: "#84a98c",
-          highlight: "rgba(143, 159, 169, 0.15)",
-          textHighlight: "#fff23688",
+          light: "#0d0d1a",
+          lightgray: "#1a1a2e",
+          gray: "#4a4a6a",
+          darkgray: "#c8c8e8",
+          dark: "#e0e0ff",
+          secondary: "#00fff0",
+          tertiary: "#ff00ff",
+          highlight: "rgba(0, 255, 240, 0.08)",
+          textHighlight: "#ff00ff44",
         },
         darkMode: {
-          light: "#161618",
-          lightgray: "#393639",
-          gray: "#646464",
-          darkgray: "#d4d4d4",
-          dark: "#ebebec",
-          secondary: "#7b97aa",
-          tertiary: "#84a98c",
-          highlight: "rgba(143, 159, 169, 0.15)",
-          textHighlight: "#b3aa0288",
+          light: "#0d0d1a",
+          lightgray: "#1a1a2e",
+          gray: "#4a4a6a",
+          darkgray: "#c8c8e8",
+          dark: "#e0e0ff",
+          secondary: "#00fff0",
+          tertiary: "#ff00ff",
+          highlight: "rgba(0, 255, 240, 0.08)",
+          textHighlight: "#ff00ff44",
         },
       },
     },
   },
   plugins: {
     transformers: [
-      Plugin.FrontMatter(), // liest title, date, draft, tags aus dem YAML
+      Plugin.FrontMatter(),
       Plugin.CreatedModifiedDate({
         priority: ["frontmatter", "filesystem"],
       }),
@@ -67,7 +67,7 @@ const config: QuartzConfig = {
       Plugin.Latex({ renderEngine: "katex" }),
     ],
     filters: [
-      Plugin.RemoveDrafts(), // ← filtert draft: true raus
+      Plugin.RemoveDrafts(),
     ],
     emitters: [
       Plugin.AliasRedirects(),
