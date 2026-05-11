@@ -1,6 +1,3 @@
----
-title: Cryopolis
----
 # Welcome, Technomancer
 to the Cryopolis Intelligence Archive.
 

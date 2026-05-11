@@ -18,7 +18,6 @@ export default (() => {
     footer {
       margin-top: 4rem;
       padding: 2rem;
-      border-top: 1px solid #00fff044;
       text-align: center;
       font-family: 'Share Tech Mono', monospace;
       color: #4a4a6a;
@@ -32,6 +31,34 @@ export default (() => {
     }
     .footer-sub {
       font-size: 0.8rem;
+    }
+    
+    @media (max-width: 768px) {
+      footer {
+        margin-top: 2rem;
+        padding: 1.5rem 1rem;
+      }
+      .footer-content p {
+        margin: 0.1rem 0;
+      }
+      .footer-sub {
+        font-size: 0.7rem;
+      }
+    }
+    
+    @media (max-width: 480px) {
+      footer {
+        padding: 1rem 0.75rem;
+      }
+      footer {
+        font-size: 0.9rem;
+      }
+      .footer-content p {
+        margin: 0.1rem 0;
+      }
+      .footer-sub {
+        font-size: 0.65rem;
+      }
     }
   `
 
