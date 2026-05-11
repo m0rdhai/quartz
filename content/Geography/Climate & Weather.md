@@ -1,4 +1,3 @@
-# Climate & Weather
 ## The Fractured Sky
 When the Cataclysm shattered [Toril](https://forgottenrealms.fandom.com/wiki/Toril) into floating fragments, it would have been safe to say the world was done for. But somehow the world's gravity core is still miraculously intact, and it desperately clings to the broken pieces. Yet the scars remain deep. 
 

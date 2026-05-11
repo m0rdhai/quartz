@@ -1,14 +1,13 @@
 ---
 title: Cryopolis
 ---
-# Cryopolis
-Welcome to the Cryopolis Intelligence Archive.
+# Welcome, Technomancer
+to the Cryopolis Intelligence Archive.
 
-## Main Databases
+## Main World Databases
 
-- [[Geography]]
-- [[Politics]]
+1. [[Geography]]
 
 ## Recent Activity
 
-Classified planetary intelligence records available.
+Classified planetary intelligence records available now. 
